@@ -6,7 +6,7 @@ stage=$(mktemp -d)
 trap 'rm -rf "$stage"' EXIT
 package="$stage/hit-sync-model"
 mkdir -p "$skill_dir/dist" "$package/bin" "$package/scripts"
-cp "$skill_dir/README.md" "$skill_dir/SKILL.md" "$package/"
+cp "$skill_dir/README.md" "$skill_dir/README.ko.md" "$skill_dir/SKILL.md" "$package/"
 cp -R "$skill_dir/agents" "$skill_dir/app" "$package/"
 cp "$skill_dir/scripts/build.sh" "$skill_dir/scripts/sync_models.py" "$package/scripts/"
 
